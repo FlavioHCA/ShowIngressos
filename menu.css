@@ -50,13 +50,12 @@ a:hover {
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
-        transition: 0.3s ease-in;
+        transition: transform 0.3s ease-in;
     }
 
     .header-menu li {
         letter-spacing: 3px;
         font-size: 10px;
-        transform: translateX(400%);
     }
 
     .mobile-menu {
@@ -69,7 +68,6 @@ a:hover {
         height: 2px;
         background: rgb(255, 255, 255);
         margin: 8px;
-        transition: 0.3s;
     }
 
     .header-menu.active {
@@ -85,84 +83,18 @@ a:hover {
             transform: translateX(0px);
         }
     }
-
-    .mobile-menu.active .line1{
-        transform: rotate(-45deg) translate(-8px, 8px);
-    }
-
-    .mobile-menu.active .line2{
-        opacity: 0;
-    }
-
-    .mobile-menu.active .line3{
-        transform: rotate(45deg) translate(-5px, -7px);
-    }
 }
+
 /*Tablet pequeno/medio*/
 @media screen and (min-width: 768px) and (max-width:1023px){
-    body { 
-        overflow-x: hidden;
-    }
-
-    .LOGO {
-        font-size: 24px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 8vh;
-        background: #23232e;
-    }
-
-    .header-menu {
-        list-style: none;
-        display: flex;
-        width: 30vw;
-        align-items: center;
-        justify-content: space-around;
-        border: 5px solid red;
-    }
-
-    .header-menu li {
-        letter-spacing: 3px;
-        font-size: 10px;
+    header {
+        border: 10px solid green;
     }
 }
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
-    body { 
-        overflow-x: hidden;
-    }
-
-    .LOGO {
-        font-size: 24px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 8vh;
-        background: #23232e;
-    }
-
-    .header-menu {
-        list-style: none;
-        display: flex;
-        width: 30vw;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .header-menu li {
-        letter-spacing: 3px;
-        font-size: 10px;
+    header {
+        border: 10px solid pink;
     }
 }
