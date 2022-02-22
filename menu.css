@@ -18,7 +18,7 @@ a:hover {
 }
 
 /*Celular*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     body { 
         overflow-x: hidden;
     }
@@ -85,20 +85,19 @@ a:hover {
     }
 }
 
-/*Tablet/Desktop*/
-@media screen and (min-width: 801px){
+/*Tablet pequeno/medio*/
+@media screen and (min-width: 768px){
     body { 
         overflow-x: hidden;
     }
 
     .LOGO {
-        font-size: 30px;
+        font-size: 24px;
         text-transform: uppercase;
         letter-spacing: 4px;
     }
 
     nav {
-        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -111,18 +110,21 @@ a:hover {
         list-style: none;
         display: flex;
         position: static;
-        width: 70%;
+        width: 60%;
         height: 100%;
-        align-items: flex-end;
+        background: #23232e;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-around;
     }
 
     .header-menu li {
         display: inline-block;
-        font-size: 18px;
+        border: blue solid 1px;
+        font-size: 14px;
     }
 
-    .header-menu li :after {
-        
+    .header-menu :hover {
+        background-color: red;
     }
 }
