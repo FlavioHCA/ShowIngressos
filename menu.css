@@ -10,15 +10,14 @@ body {
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    opacity: 0.7;
 }
 
 /*Celular*/
 @media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+    
     body { 
         overflow-x: hidden;
     }
@@ -34,7 +33,7 @@ a:hover {
         justify-content: space-around;
         align-items: center;
         height: 8vh;
-        background: #23232e;
+        background: black;
     }
 
     .header-menu {
@@ -45,7 +44,7 @@ a:hover {
         right: 0;
         width: 30vw;
         height: 80vh;
-        background: #23232e;
+        background: black;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -55,7 +54,8 @@ a:hover {
 
     .header-menu li {
         letter-spacing: 3px;
-        font-size: 10px;
+        font-size: 16px;
+        transform: translateX(1000%);
     }
 
     .mobile-menu {
@@ -68,6 +68,7 @@ a:hover {
         height: 2px;
         background: rgb(255, 255, 255);
         margin: 8px;
+        transition: 0.1s;
     }
 
     .header-menu.active {
@@ -83,18 +84,35 @@ a:hover {
             transform: translateX(0px);
         }
     }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
 }
 
-/*Tablet pequeno/medio*/
+/*Tablet/Desktop*/
 @media screen and (min-width: 768px){
+    .mobile-menu {
+        display: none;
+    }
+
     body { 
         overflow-x: hidden;
     }
 
     .LOGO {
-        font-size: 24px;
+        font-size: 20px;
         text-transform: uppercase;
         letter-spacing: 4px;
+        margin-left: 5%;
     }
 
     nav {
@@ -102,29 +120,49 @@ a:hover {
         justify-content: space-around;
         align-items: center;
         height: 8vh;
-        background: #23232e;
+        background: black;
     }
 
-    .header-menu {
+    .menu {
+        margin-left: 10%;
         letter-spacing: 2px;
         list-style: none;
         display: flex;
-        position: static;
-        width: 60%;
+        position: relative;
+        width: 85%;
         height: 100%;
-        background: #23232e;
-        flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-around;
     }
 
-    .header-menu li {
+    .menu ul li {
+        margin-left: 5px;
         display: inline-block;
-        border: blue solid 1px;
         font-size: 14px;
+        padding-top: 30%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
-    .header-menu :hover {
-        background-color: red;
+    .menu ul li:hover {
+        background-color: rgb(63, 63, 63);
+    }
+}
+
+@media screen and (min-width: 1010px){
+    .LOGO {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-left: 5%;
+    }
+
+    .menu ul li {
+        margin-left: 5px;
+        display: inline-block;
+        font-size: 1.2rem;
+        padding-top: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
