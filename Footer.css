@@ -35,7 +35,7 @@
 @media screen and (min-width: 1010px) {
     footer {
         bottom: 0;
-        position: fixed;
+        position: static;
         width: 100%;
     }
 
