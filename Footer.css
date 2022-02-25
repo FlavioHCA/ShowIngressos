@@ -1,33 +1,17 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body { 
-    overflow-x: hidden;
-}
-
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    transition: 0.3s;
-}
-
 /*Celular*/
 @media screen and (max-width: 767px) {
     footer {
         bottom: 0;
         position: fixed;
-        width: 100%;     
-        border: 1px solid red;
+        width: 100%;
     }
 
     .footerTOP {
-        background-color: blue;
+        background-color: rgb(0, 0, 0);
     }
 
     .footerBOTTOM {
-        background-color: green;
+        background-color: rgb(255, 255, 255);
     }
 }
 
@@ -36,16 +20,15 @@ a {
     footer {
         bottom: 0;
         position: fixed;
-        width: 100%;     
-        border: 1px solid red;
+        width: 100%;
     }
 
     .footerTOP {
-        background-color: blue;
+        background-color: rgb(0, 0, 0);
     }
     
     .footerBOTTOM {
-        background-color: green;
+        background-color: rgb(255, 255, 255);
     }
 }
 
@@ -53,15 +36,15 @@ a {
     footer {
         bottom: 0;
         position: fixed;
-        width: 100%;     
-        border: 1px solid red;
+        width: 100%;
     }
 
     .footerTOP {
-        background-color: blue;
+        background-color: rgb(0, 0, 0);
     }
     
     .footerBOTTOM {
-        background-color: green;
+        background-color: rgb(255, 255, 255);
+        height: 10vh;
     }
 }
