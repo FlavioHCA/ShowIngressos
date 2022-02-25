@@ -13,10 +13,6 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
-    opacity: 0.7;
-}
-
 /*Celular*/
 @media screen and (max-width: 767px) {
     footer {
@@ -25,20 +21,47 @@ a:hover {
         width: 100%;     
         border: 1px solid red;
     }
+
     .footerTOP {
         background-color: blue;
     }
+
     .footerBOTTOM {
         background-color: green;
     }
 }
 
-/*Tablet pequeno/medio*/
-@media screen and (min-width: 768px) and (max-width:1023px){
+/*Tablet/Desktop*/
+@media screen and (min-width: 768px) {
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;     
+        border: 1px solid red;
+    }
+
+    .footerTOP {
+        background-color: blue;
+    }
     
+    .footerBOTTOM {
+        background-color: green;
+    }
 }
 
-/*Desktop*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1010px) {
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;     
+        border: 1px solid red;
+    }
+
+    .footerTOP {
+        background-color: blue;
+    }
     
+    .footerBOTTOM {
+        background-color: green;
+    }
 }
