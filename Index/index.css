@@ -6,7 +6,6 @@
         margin: 5% 5% 0% 2.5%; /*cima - direita - baixo - esquerda*/
         width: 90%;
         height: 80vh;
-        /*background-color: rgba(71, 71, 71, 0.623);*/
         border-radius: 10px;
     }
 
@@ -26,47 +25,48 @@
         display: inline-block;
         margin: 10% 2% 0% 0%; /*cima - direita - baixo - esquerda*/
         width: 45%;
-        height: 32vh;
+        height: 30vh;
         border-radius: 10px;
         box-Shadow: -1px 1px 5px rgba(0, 0, 0, 0.5); /*esquerda - baixo - nivel_borrão - cor_borrão*/
+    }
+
+    main .container div a { 
+        width: 100%;
+        height: 100%;
+    }
+
+    main .container div:hover {
+        box-Shadow: -1px 1px 20px rgba(0, 0, 0, 0.5); /*esquerda - baixo - nivel_borrão - cor_borrão*/
     }
 
     main .divblues a {
         text-align: center;
         display: inline-block;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
     }
 
     main .divrap a {
         text-align: center;
         display: inline-block;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
     }
 
     main .divpop a {
         text-align: center;
         display: inline-block;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
     }
 
     main .divsertanejo a {
         text-align: center;
         display: inline-block;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
     }
 
     main .container div a img { /*All img and all (div-a)*/
         width: 100%;
         height: 15vh;
-        border-radius: 10px;
+        border-radius: 3px;
     }
 
     main .container div a p {
@@ -101,48 +101,49 @@
         text-align: center;
         display: inline-block;
         margin: 10% 2% 0% 0%; /*cima - direita - baixo - esquerda*/
-        width: 45%;
-        height: 60vh;
+        width: 40%;
+        height: 30vh;
         border-radius: 10px;
         box-Shadow: -1px 1px 5px rgba(0, 0, 0, 0.5); /*esquerda - baixo - nivel_borrão - cor_borrão*/
+    }
+
+    main .container div a { 
+        width: 100%;
+        height: 100%;
+    }
+
+    main .container div a img { /*All img and all (div-a)*/
+        width: 100%;
+        height: 22vh;
+        border-radius: 3px;
+    }
+
+    main .container div:hover {
+        box-Shadow: -1px 1px 20px rgba(0, 0, 0, 0.5); /*esquerda - baixo - nivel_borrão - cor_borrão*/
     }
 
     main .divblues a {
         text-align: center;
         display: inline-block;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
     }
 
     main .divrap a {
         text-align: center;
         display: inline-block;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
     }
 
     main .divpop a {
         text-align: center;
         display: inline-block;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
     }
 
     main .divsertanejo a {
         text-align: center;
         display: inline-block;
         justify-content: space-around;
-        width: 95%;
-        height: 28vh;
-    }
-
-    main .container div a img { /*All img and all (div-a)*/
-        width: 100%;
-        height: 50vh;
-        border-radius: 10px;
     }
 
     main .container div a p {
@@ -151,6 +152,36 @@
 }
 
 /*Desktop*/
-@media screen and (min-width: 1010px) {
+@media screen and (min-width: 950px) {
+    main {
+        display: flex;
+        padding: 10px;
+        margin: 5% 2.5% 5% 2.5%; /*cima - direita - baixo - esquerda*/
+        width: 90%;
+        height: 100%;
+        border-radius: 10px;
+        
+    }
 
+    main h1 {
+        font-family: cursive;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    main .container {
+        width: 100%;
+        text-align: center;
+    }
+
+    main .container div {
+        text-align: center;
+        display: inline-block;
+        margin: 10% 1% 0% 1%; /*cima - direita - baixo - esquerda*/
+        width: 20%;
+        height: 30vh;
+        border-radius: 10px;
+        box-Shadow: -1px 1px 5px rgba(0, 0, 0, 0.5); /*esquerda - baixo - nivel_borrão - cor_borrão*/
+    }
+}
 }

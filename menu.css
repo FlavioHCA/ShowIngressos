@@ -18,7 +18,7 @@ p {
 }
 
 /*Celular*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 949px) {
     .menu {
         display: none;
     }
@@ -116,8 +116,12 @@ p {
     }
 }
 
-/*Tablet/Desktop*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) { .LOGO { font-size: 16px;}.header-menu li {font-size: 12px;}p{font-size: 12px;} }
+@media screen and (min-width: 760px) { .header-menu li {font-size: 22px;} }
+@media screen and (min-width: 860px) { .header-menu li {font-size: 26px;} }
+
+/*Tablet/Mini_Desktop*/
+@media screen and (min-width: 950px) {
     .mobile-menu {
         display: none;
     }
@@ -156,7 +160,7 @@ p {
     .menu ul li {
         margin-left: 5px;
         display: inline-block;
-        font-size: 14px;
+        font-size: 16px;
         padding-top: 30%;
         padding-left: 5px;
         padding-right: 5px;
@@ -167,6 +171,9 @@ p {
     }
 }
 
+@media screen and (min-width: 980px) { .menu ul li {font-size: 20px;} }
+
+/*Desktop*/
 @media screen and (min-width: 1010px) {
     .LOGO {
         font-size: 24px;
