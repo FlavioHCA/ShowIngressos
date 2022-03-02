@@ -5,17 +5,31 @@
 
 body { 
     overflow-x: hidden;
-    background-color: rgba(255, 255, 255, 0.918);
+    background-color: #D9CCC1;
 }
 
 a {
-    color: rgb(255, 255, 255);
+    color: #774432;
     text-decoration: none;
 }
 
 p {
-    color: black;
+    color: #774432;
 }
+
+nav {
+    background: #b15e15;
+}
+
+.LOGO {
+    color: #774432;
+}
+
+.header-menu {
+    background: #b15e15
+}
+
+li { color: hsl(40, 100%, 50%);}
 
 /*Celular*/
 @media screen and (max-width: 949px) {
@@ -38,7 +52,6 @@ p {
         justify-content: space-around;
         align-items: center;
         height: 8vh;
-        background: black;
     }
 
     .header-menu {
@@ -49,7 +62,6 @@ p {
         right: 0;
         width: 30vw;
         height: 80vh;
-        background: black;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -142,7 +154,6 @@ p {
         justify-content: space-around;
         align-items: center;
         height: 8vh;
-        background: black;
     }
 
     .menu {

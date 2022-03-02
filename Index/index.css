@@ -1,3 +1,7 @@
+h1 {
+    color: #774432ec;
+}
+
 /*Celular*/
 @media screen and (max-width: 767px) {
     main {
@@ -27,7 +31,7 @@
         width: 45%;
         height: 30vh;
         border-radius: 10px;
-        box-Shadow: -1px 1px 5px rgba(0, 0, 0, 0.5); /*esquerda - baixo - nivel_borrão - cor_borrão*/
+        box-Shadow: -1px 1px 5px #031626; /*esquerda - baixo - nivel_borrão - cor_borrão*/
     }
 
     main .container div a { 
@@ -119,7 +123,7 @@
     }
 
     main .container div:hover {
-        box-Shadow: -1px 1px 20px rgba(0, 0, 0, 0.5); /*esquerda - baixo - nivel_borrão - cor_borrão*/
+        box-Shadow: -1px 1px 10px hsl(16, 30%, 33%); /*esquerda - baixo - nivel_borrão - cor_borrão*/
     }
 
     main .divblues a {
@@ -183,5 +187,4 @@
         border-radius: 10px;
         box-Shadow: -1px 1px 5px rgba(0, 0, 0, 0.5); /*esquerda - baixo - nivel_borrão - cor_borrão*/
     }
-}
 }
