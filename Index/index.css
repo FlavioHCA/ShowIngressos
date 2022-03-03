@@ -1,5 +1,5 @@
 h1 {
-    color: #774432ec;
+    color: hsla(16, 61%, 25%, 0.925);
 }
 
 /*Celular*/
@@ -88,7 +88,6 @@ h1 {
         width: 90%;
         height: 100%;
         border-radius: 10px;
-        
     }
 
     main h1 {
@@ -182,7 +181,7 @@ h1 {
     main .container div {
         text-align: center;
         display: inline-block;
-        margin: 10% 1% 0% 1%; /*cima - direita - baixo - esquerda*/
+        margin: 15% 1% 15% 1%; /*cima - direita - baixo - esquerda*/
         width: 20%;
         height: 30vh;
         border-radius: 10px;
