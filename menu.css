@@ -193,25 +193,25 @@ li { color: hsl(40, 100%, 50%);}
         padding-right: 5px;
     }
 
-    /*.menu ul li:hover {
-        background-color: rgb(63, 63, 63, 0.5);
-    }*/
+    .menu ul li:hover {
+        background-color: hsla(28, 79%, 20%, 0.300);
+        transition: all 2s ease;
+    }
 
-    .efeito1:before {
+    /*.menu ul li:before {
         content: ' ';
         position: absolute;
         bottom: 0px;
-        left: 0px;
-        width: 100%;
+        width: 10%;
         height: 0px;
         background-color: hsla(28, 79%, 30%, 0.300);
         border-radius: 10px;
         transition: all 1s ease;
     }
 
-    .efeito1:hover:before {
+    .menu ul li:before {
         height: 100%;
-    }
+    }*/
 }
 
 @media screen and (min-width: 980px) { .menu ul li {font-size: 20px;} }
